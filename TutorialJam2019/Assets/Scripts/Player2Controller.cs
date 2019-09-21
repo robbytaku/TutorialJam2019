@@ -7,37 +7,25 @@ public class Player2Controller : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
     private float moveInput;
-
     private Rigidbody2D RB;
-
     private bool facingRight = true;
-
-    private bool Grounded;
-    public Transform groundCheck;
-    public float checkRadius;
-    public LayerMask whatIsGround;
-
-    private int extraJumps;
-    public int extraJumpsValue;
+    private bool isGrounded;
 
     void Start()
     {
-        extraJumps = extraJumpsValue;
         RB = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        Grounded = Physics2D.OverlapCircle(groundCheck.position, whatIsGround);
-
         moveInput = Input.GetAxis("HorizontalAlt");
         RB.velocity = new Vector2(moveInput * moveSpeed, RB.velocity.y);
 
-        if(facingRight == false && moveInput > 0)
+        if (facingRight == false && moveInput > 0)
         {
             Flip();
-        } else if(facingRight == true && moveInput <0)
+        }
+        else if (facingRight == true && moveInput < 0)
         {
             Flip();
         }
@@ -45,20 +33,30 @@ public class Player2Controller : MonoBehaviour
 
     void Update()
     {
-        if(Grounded == true)
+        if (Input.GetButtonDown("A Button 2"))
         {
-            extraJumps = extraJumpsValue;
-        }
-
-        if (Input.GetButtonDown("A Button 2") && extraJumps > 0)
-        {
-            RB.velocity = Vector2.up * jumpForce;
-            extraJumps--;
-        } else if(Input.GetButtonDown("A Button 2") && extraJumps == 0 && Grounded == true){
-            RB.velocity = Vector2.up * jumpForce;
+            if (isGrounded)
+            {
+                RB.velocity = Vector2.up * jumpForce;
+            }
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "ground")
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "ground")
+        {
+            isGrounded = false;
+        }
+    }
     void Flip()
     {
         facingRight = !facingRight;
