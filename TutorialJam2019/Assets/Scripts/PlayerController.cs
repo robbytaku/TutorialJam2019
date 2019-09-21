@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public int controllerNumber;
+
     public float moveSpeed;
     public float jumpForce;
     private float moveInput;
