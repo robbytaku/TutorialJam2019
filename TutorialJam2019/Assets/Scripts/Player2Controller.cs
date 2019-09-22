@@ -21,11 +21,11 @@ public class Player2Controller : MonoBehaviour
         moveInput = Input.GetAxis("HorizontalAlt");
         RB.velocity = new Vector2(moveInput * moveSpeed, RB.velocity.y);
 
-        if (facingRight == false && moveInput > 0)
+        if (facingRight == false && moveInput < 0)
         {
             Flip();
         }
-        else if (facingRight == true && moveInput < 0)
+        else if (facingRight == true && moveInput > 0)
         {
             Flip();
         }
