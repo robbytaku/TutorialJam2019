@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         moveInput = Input.GetAxis("Horizontal");
+        moveInput = Input.GetAxis("Horizontal 3");
         RB.velocity = new Vector2(moveInput * moveSpeed, RB.velocity.y);
 
         if (facingRight == false && moveInput > 0)
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("A Button"))
+        if (Input.GetButtonDown("A Button") || Input.GetButtonDown("A Button 3"))
         {
             if (isGrounded)
             {
@@ -57,7 +58,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Y Button") && !blocking)
+        if (Input.GetButtonDown("Y Button") || Input.GetButtonDown("Y Button 3") && !blocking)
         {
             blocking = true;
             blockTimer = blockCd;
@@ -78,7 +79,7 @@ public class PlayerController : MonoBehaviour
             }
         }
        
-        if (Input.GetButtonDown("B Button") && !kicking)
+        if (Input.GetButtonDown("B Button") || Input.GetButtonDown("B Button 3") && !kicking)
         {
             kicking = true;
             kickTimer = kickCd;
@@ -99,7 +100,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(Input.GetButtonDown("X Button") && !attacking)
+        if(Input.GetButtonDown("X Button") || Input.GetButtonDown("X Button 3") && !attacking)
         {
             attacking = true;
             attackTimer = attackCd;

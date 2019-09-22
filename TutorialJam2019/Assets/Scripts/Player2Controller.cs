@@ -34,7 +34,8 @@ public class Player2Controller : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveInput = Input.GetAxis("HorizontalAlt");
+        moveInput = Input.GetAxis("Horizontal 2");
+        moveInput = Input.GetAxis("Horizontal 4");
         RB.velocity = new Vector2(moveInput * moveSpeed, RB.velocity.y);
 
         if (facingRight == false && moveInput > 0)
@@ -49,7 +50,7 @@ public class Player2Controller : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("A Button 2"))
+        if (Input.GetButtonDown("A Button 2") || Input.GetButtonDown("A Button 4"))
         {
             if (isGrounded)
             {
@@ -57,7 +58,7 @@ public class Player2Controller : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Y Button 2") && !blocking)
+        if (Input.GetButtonDown("Y Button 2") || Input.GetButtonDown("Y Button 4") && !blocking)
         {
             blocking = true;
             blockTimer = blockCd;
@@ -78,7 +79,7 @@ public class Player2Controller : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("B Button 2") && !kicking)
+        if (Input.GetButtonDown("B Button 2") || Input.GetButtonDown("B Button 4") && !kicking)
         {
             kicking = true;
             kickTimer = kickCd;
@@ -99,7 +100,7 @@ public class Player2Controller : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("X Button 2") && !attacking)
+        if (Input.GetButtonDown("X Button 2") || Input.GetButtonDown("X Button 4") && !attacking)
         {
             attacking = true;
             attackTimer = attackCd;
