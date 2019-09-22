@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public Collider2D P1PunchHitBox;
     private bool attacking = false;
     private float attackTimer = 0;
-    private float attackCd = 0.3f;
+    private float attackCd = 0.6f;
     private Animator anim;
 
     void Start()
