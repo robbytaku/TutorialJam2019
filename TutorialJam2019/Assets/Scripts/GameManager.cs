@@ -13,7 +13,12 @@ public class GameManager : MonoBehaviour
     public int P1Life;
     public int P2Life;
 
-    void Update()
+    void Desert()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+
+void Update()
     {
         if(P1Life <= 0)
         {
@@ -74,6 +79,6 @@ public class GameManager : MonoBehaviour
 
     public void RoundEnd()
     {
-     
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
