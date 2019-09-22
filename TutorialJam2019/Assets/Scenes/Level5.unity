@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 459786632}
   - component: {fileID: 459786631}
   m_Layer: 0
-  m_Name: Labaratory
+  m_Name: LogCabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
