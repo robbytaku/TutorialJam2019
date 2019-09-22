@@ -10,11 +10,6 @@ public class GameManager : MonoBehaviour
     public int P1Life;
     public int P2Life;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if(P1Life <= 0)

@@ -12,15 +12,16 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D RB;
     private bool facingRight = true;
     private bool isGrounded;
-    public GameObject PunchHitBox;
-    public Transform PunchPoint;
-
+    public Collider2D P1PunchHitBox;
+    private bool attacking = false;
+    private float attackTimer = 0;
+    private float attackCd = 0.3f;
     private Animator anim;
 
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
-
+        P1PunchHitBox.enabled = false;
         anim = GetComponent<Animator>();
     }
 
@@ -49,11 +50,26 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(Input.GetButtonDown("X Button"))
+        if(Input.GetButtonDown("X Button") && !attacking)
         {
-            Instantiate(PunchHitBox, PunchPoint.position, PunchPoint.rotation);
-
+            attacking = true;
+            attackTimer = attackCd;
             anim.SetTrigger("Punch");
+
+            P1PunchHitBox.enabled = true;
+        }
+
+        if (attacking)
+        {
+            if (attackTimer > 0)
+            {
+                attackTimer -= Time.deltaTime;
+            }
+            else
+            {
+                attacking = false;
+                P1PunchHitBox.enabled = false; 
+            }
         }
 
         anim.SetFloat("Speed", Mathf.Abs(RB.velocity.x));

@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 75d89987d250a8349bf3b1fa86ced6c3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2488011936839093310
+    second: Punching Sprite Sheet-export_0
+  - first:
+      213: 7429325404113073376
+    second: Punching Sprite Sheet-export_1
+  - first:
+      213: 8542603511120663493
+    second: Punching Sprite Sheet-export_2
+  - first:
+      213: -6512799218146955412
+    second: Punching Sprite Sheet-export_3
+  - first:
+      213: -7220417818305581776
+    second: Punching Sprite Sheet-export_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +85,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Punching Sprite Sheet-export_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 18
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15ae7c8886eb2a4698474ca58a08755
+      internalID: 2488011936839093310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punching Sprite Sheet-export_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 18
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ec9413e65b9a74899fd5f819b910e3
+      internalID: 7429325404113073376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punching Sprite Sheet-export_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 18
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52583c67eb6b93346b40db778cd72772
+      internalID: 8542603511120663493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punching Sprite Sheet-export_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 18
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286b2aca8b5594f43810ec16e4fd6714
+      internalID: -6512799218146955412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punching Sprite Sheet-export_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 18
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbe0164ca0481f4d986dda6a4775d39
+      internalID: -7220417818305581776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
