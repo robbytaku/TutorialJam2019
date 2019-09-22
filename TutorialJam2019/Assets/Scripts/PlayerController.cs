@@ -83,7 +83,6 @@ public class PlayerController : MonoBehaviour
             kicking = true;
             kickTimer = kickCd;
             anim.SetTrigger("Kick");
-            Debug.Log("Kick");
             P1KickHitBox.enabled = true;
         }
 
@@ -148,4 +147,10 @@ public class PlayerController : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
          }
+
+    public void KickP1()
+    {
+        anim.SetTrigger("Idle");
+        gameObject.tag = "player1";
+    }
 }
