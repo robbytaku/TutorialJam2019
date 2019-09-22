@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject player1;
     public GameObject player2;
+    public GameObject[] p1Hearts;
+    public GameObject[] p2Hearts;
 
     public int P1Life;
     public int P2Life;
@@ -26,10 +28,32 @@ public class GameManager : MonoBehaviour
     public void HurtP1()
     {
         P1Life -= 1;
+        for(int i = 0; i < p1Hearts.Length; i++)
+        {
+            if(P1Life > i)
+            {
+                p1Hearts[i].SetActive(true);
+            }
+            else
+            {
+                p1Hearts[i].SetActive(false);
+            }
+        }
     }
 
     public void HurtP2()
     {
         P2Life -= 1;
+        for (int i = 0; i < p2Hearts.Length; i++)
+        {
+            if (P2Life > i)
+            {
+                p2Hearts[i].SetActive(true);
+            }
+            else
+            {
+                p2Hearts[i].SetActive(false);
+            }
+        }
     }
 }
