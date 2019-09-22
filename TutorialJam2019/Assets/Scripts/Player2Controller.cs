@@ -32,8 +32,7 @@ public class Player2Controller : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveInput = Input.GetAxis("Horizontal 2");
-        moveInput += Input.GetAxis("Horizontal 4");
+        moveInput = Input.GetAxis("Horizontal 2") + Input.GetAxis("Horizontal 4");
         RB.velocity = new Vector2(moveInput * moveSpeed, RB.velocity.y);
 
         if (facingRight == false && moveInput > 0)

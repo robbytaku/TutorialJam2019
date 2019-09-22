@@ -32,6 +32,11 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    void MMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void StartGame()
     {
         Invoke("LevelTransition", 1f);
@@ -46,4 +51,10 @@ public class MainMenu : MonoBehaviour
     {
         Invoke("CreditsTransition", 1f);
     }
+    
+    public void PressBack()
+    {
+        Invoke("MMenu", 1f);
+    }
+
 }
