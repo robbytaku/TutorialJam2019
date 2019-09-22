@@ -12,10 +12,16 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D RB;
     private bool facingRight = true;
     private bool isGrounded;
+    public GameObject PunchHitBox;
+    public Transform PunchPoint;
+
+    private Animator anim;
 
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
+
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -42,6 +48,16 @@ public class PlayerController : MonoBehaviour
                 RB.velocity = Vector2.up * jumpForce;
             }
         }
+
+        if(Input.GetButtonDown("X Button"))
+        {
+            Instantiate(PunchHitBox, PunchPoint.position, PunchPoint.rotation);
+
+            anim.SetTrigger("Punch");
+        }
+
+        anim.SetFloat("Speed", Mathf.Abs(RB.velocity.x));
+        anim.SetBool("Grounded", isGrounded);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
