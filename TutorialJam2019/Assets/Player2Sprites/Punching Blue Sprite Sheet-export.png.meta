@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 7de45b95c13fa154bb886775cace5d37
+guid: 0c43b60ba370a584eab24ba76169053f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8706427954151833246
-    second: Kicking Sprite Sheet-export_0
+      213: -7246056306399310636
+    second: Punching Blue Sprite Sheet-export_0
   - first:
-      213: -756041226448099378
-    second: Kicking Sprite Sheet-export_1
+      213: 5630237256284666321
+    second: Punching Blue Sprite Sheet-export_1
   - first:
-      213: -6801735124517360905
-    second: Kicking Sprite Sheet-export_2
+      213: 322634090967218726
+    second: Punching Blue Sprite Sheet-export_2
   - first:
-      213: -2511626542480340604
-    second: Kicking Sprite Sheet-export_3
+      213: -3519106751476157131
+    second: Punching Blue Sprite Sheet-export_3
   - first:
-      213: -1864678938305415324
-    second: Kicking Sprite Sheet-export_4
+      213: 2423281408828146442
+    second: Punching Blue Sprite Sheet-export_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -101,10 +101,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_0
+      name: Punching Blue Sprite Sheet-export_0
       rect:
         serializedVersion: 2
-        x: 36
+        x: 40
         y: 18
         width: 32
         height: 62
@@ -115,19 +115,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 107ca69e481ca2e4ea09e623e4e1da9c
-      internalID: -8706427954151833246
+      spriteID: 6e0e79026f5d63349a7c372f8273b5b3
+      internalID: -7246056306399310636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_1
+      name: Punching Blue Sprite Sheet-export_1
       rect:
         serializedVersion: 2
         x: 132
         y: 18
-        width: 34
+        width: 32
         height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -136,19 +136,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c25c380bbfe0d9446887001ea6d4b196
-      internalID: -756041226448099378
+      spriteID: 5b9fc91961ae0334897fd394ffa19ecc
+      internalID: 5630237256284666321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_2
+      name: Punching Blue Sprite Sheet-export_2
       rect:
         serializedVersion: 2
-        x: 230
+        x: 226
         y: 18
-        width: 38
+        width: 36
         height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,38 +157,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c0cc4de5fe3b964dae40a3e49b8d58c
-      internalID: -6801735124517360905
+      spriteID: 779c5db538d18f440b9b1a675f347632
+      internalID: 322634090967218726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_3
+      name: Punching Blue Sprite Sheet-export_3
       rect:
         serializedVersion: 2
         x: 324
-        y: 18
-        width: 34
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7ca39ef3ae470041aad5ceaabb94561
-      internalID: -2511626542480340604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_4
-      rect:
-        serializedVersion: 2
-        x: 426
         y: 18
         width: 32
         height: 62
@@ -199,8 +178,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578cb555794c0554f9b0ad6150cd62b8
-      internalID: -1864678938305415324
+      spriteID: 4bcc4a06b1c53ba4da39d87da4ca8966
+      internalID: -3519106751476157131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punching Blue Sprite Sheet-export_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 18
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cc607302f743848b130de86d1b2d20
+      internalID: 2423281408828146442
       vertices: []
       indices: 
       edges: []

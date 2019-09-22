@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 7de45b95c13fa154bb886775cace5d37
+guid: 73b0939df9e559e4f92b97002fa2843d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8706427954151833246
-    second: Kicking Sprite Sheet-export_0
+      213: -1857417338792666277
+    second: Walking Blue SpriteSheet-export_0
   - first:
-      213: -756041226448099378
-    second: Kicking Sprite Sheet-export_1
+      213: -3555954172531990539
+    second: Walking Blue SpriteSheet-export_1
   - first:
-      213: -6801735124517360905
-    second: Kicking Sprite Sheet-export_2
+      213: 7024723696535877171
+    second: Walking Blue SpriteSheet-export_2
   - first:
-      213: -2511626542480340604
-    second: Kicking Sprite Sheet-export_3
-  - first:
-      213: -1864678938305415324
-    second: Kicking Sprite Sheet-export_4
+      213: -5092861028133628367
+    second: Walking Blue SpriteSheet-export_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -101,10 +98,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_0
+      name: Walking Blue SpriteSheet-export_0
       rect:
         serializedVersion: 2
-        x: 36
+        x: 34
         y: 18
         width: 32
         height: 62
@@ -115,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 107ca69e481ca2e4ea09e623e4e1da9c
-      internalID: -8706427954151833246
+      spriteID: aa1c96dbc610ef3479a3819c527336e8
+      internalID: -1857417338792666277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_1
+      name: Walking Blue SpriteSheet-export_1
       rect:
         serializedVersion: 2
         x: 132
         y: 18
-        width: 34
-        height: 62
+        width: 32
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c25c380bbfe0d9446887001ea6d4b196
-      internalID: -756041226448099378
+      spriteID: c85b9267ca56b7941a36e493564360fd
+      internalID: -3555954172531990539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_2
+      name: Walking Blue SpriteSheet-export_2
       rect:
         serializedVersion: 2
-        x: 230
+        x: 232
         y: 18
-        width: 38
-        height: 62
+        width: 32
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,38 +154,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c0cc4de5fe3b964dae40a3e49b8d58c
-      internalID: -6801735124517360905
+      spriteID: 4d25be88dc94dbe4f827273d62ffd2c4
+      internalID: 7024723696535877171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_3
+      name: Walking Blue SpriteSheet-export_3
       rect:
         serializedVersion: 2
-        x: 324
-        y: 18
-        width: 34
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7ca39ef3ae470041aad5ceaabb94561
-      internalID: -2511626542480340604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_4
-      rect:
-        serializedVersion: 2
-        x: 426
+        x: 330
         y: 18
         width: 32
         height: 62
@@ -199,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578cb555794c0554f9b0ad6150cd62b8
-      internalID: -1864678938305415324
+      spriteID: e0f3adf538a0d874abc7a7f73e202896
+      internalID: -5092861028133628367
       vertices: []
       indices: 
       edges: []

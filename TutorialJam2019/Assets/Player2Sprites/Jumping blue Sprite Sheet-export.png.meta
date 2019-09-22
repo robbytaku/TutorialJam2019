@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 7de45b95c13fa154bb886775cace5d37
+guid: f372467e8cfab1444b06357e72d7f272
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8706427954151833246
-    second: Kicking Sprite Sheet-export_0
+      213: 8486041514290124512
+    second: Jumping blue Sprite Sheet-export_0
   - first:
-      213: -756041226448099378
-    second: Kicking Sprite Sheet-export_1
+      213: 5384408885052723646
+    second: Jumping blue Sprite Sheet-export_1
   - first:
-      213: -6801735124517360905
-    second: Kicking Sprite Sheet-export_2
+      213: -3658591215034143240
+    second: Jumping blue Sprite Sheet-export_2
   - first:
-      213: -2511626542480340604
-    second: Kicking Sprite Sheet-export_3
+      213: -3208076188721611497
+    second: Jumping blue Sprite Sheet-export_3
   - first:
-      213: -1864678938305415324
-    second: Kicking Sprite Sheet-export_4
+      213: -6019780861599623203
+    second: Jumping blue Sprite Sheet-export_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -101,10 +101,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_0
+      name: Jumping blue Sprite Sheet-export_0
       rect:
         serializedVersion: 2
-        x: 36
+        x: 30
         y: 18
         width: 32
         height: 62
@@ -115,20 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 107ca69e481ca2e4ea09e623e4e1da9c
-      internalID: -8706427954151833246
+      spriteID: 85d7460d5e36bca4d88ccc3056a6fc27
+      internalID: 8486041514290124512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_1
+      name: Jumping blue Sprite Sheet-export_1
       rect:
         serializedVersion: 2
-        x: 132
+        x: 130
         y: 18
-        width: 34
-        height: 62
+        width: 32
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c25c380bbfe0d9446887001ea6d4b196
-      internalID: -756041226448099378
+      spriteID: c8306436808f3a34ba54c13e1fc34174
+      internalID: 5384408885052723646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_2
+      name: Jumping blue Sprite Sheet-export_2
       rect:
         serializedVersion: 2
-        x: 230
+        x: 228
         y: 18
-        width: 38
-        height: 62
+        width: 32
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c0cc4de5fe3b964dae40a3e49b8d58c
-      internalID: -6801735124517360905
+      spriteID: bf25b9a017ce6f54cb4714ba9300a726
+      internalID: -3658591215034143240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_3
+      name: Jumping blue Sprite Sheet-export_3
       rect:
         serializedVersion: 2
-        x: 324
+        x: 328
         y: 18
-        width: 34
-        height: 62
+        width: 32
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7ca39ef3ae470041aad5ceaabb94561
-      internalID: -2511626542480340604
+      spriteID: b8341a9e14ecb974695f5399b4deb5d8
+      internalID: -3208076188721611497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_4
+      name: Jumping blue Sprite Sheet-export_4
       rect:
         serializedVersion: 2
         x: 426
@@ -199,8 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578cb555794c0554f9b0ad6150cd62b8
-      internalID: -1864678938305415324
+      spriteID: cd540bb40e3df154f8348e457d898eb8
+      internalID: -6019780861599623203
       vertices: []
       indices: 
       edges: []

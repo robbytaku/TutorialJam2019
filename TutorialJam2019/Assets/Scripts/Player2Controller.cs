@@ -13,9 +13,16 @@ public class Player2Controller : MonoBehaviour
     private bool facingRight = true;
     private bool isGrounded;
     public Collider2D P2PunchHitBox;
+    public Collider2D P2KickHitBox;
     private bool attacking = false;
     private float attackTimer = 0;
-    private float attackCd = 0.6f;
+    private float attackCd = 0.01f;
+    private bool blocking = false;
+    private float blockTimer = 0;
+    public float blockCd = 0.5f;
+    private bool kicking = false;
+    private float kickTimer = 0;
+    private float kickCd = 0.01f;
     private Animator anim;
 
     void Start()
@@ -47,6 +54,48 @@ public class Player2Controller : MonoBehaviour
             if (isGrounded)
             {
                 RB.velocity = Vector2.up * jumpForce;
+            }
+        }
+
+        if (Input.GetButtonDown("Y Button 2") && !blocking)
+        {
+            blocking = true;
+            blockTimer = blockCd;
+            anim.SetTrigger("Block");
+            gameObject.tag = "Player2Block";
+        }
+
+        if (blocking)
+        {
+            if (blockTimer > 0)
+            {
+                blockTimer -= Time.deltaTime;
+            }
+            else
+            {
+                blocking = false;
+                gameObject.tag = "player2";
+            }
+        }
+
+        if (Input.GetButtonDown("B Button 2") && !kicking)
+        {
+            kicking = true;
+            kickTimer = kickCd;
+            anim.SetTrigger("Kick");
+            P2KickHitBox.enabled = true;
+        }
+
+        if (kicking)
+        {
+            if (kickTimer > 0)
+            {
+                kickTimer -= Time.deltaTime;
+            }
+            else
+            {
+                kicking = false;
+                P2KickHitBox.enabled = false;
             }
         }
 
@@ -97,5 +146,11 @@ public class Player2Controller : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    public void KickP2()
+    {
+        anim.SetTrigger("Idle");
+        gameObject.tag = "player2";
     }
 }

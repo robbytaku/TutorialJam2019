@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 7de45b95c13fa154bb886775cace5d37
+guid: 3d98650f57160024a8521e1f56e000e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8706427954151833246
-    second: Kicking Sprite Sheet-export_0
+      213: 1719016131110124852
+    second: Blocking Sprite Sheet-export_0
   - first:
-      213: -756041226448099378
-    second: Kicking Sprite Sheet-export_1
+      213: 359327264075438781
+    second: Blocking Sprite Sheet-export_1
   - first:
-      213: -6801735124517360905
-    second: Kicking Sprite Sheet-export_2
+      213: 4195921324308303952
+    second: Blocking Sprite Sheet-export_2
   - first:
-      213: -2511626542480340604
-    second: Kicking Sprite Sheet-export_3
+      213: -5166373620033355234
+    second: Blocking Sprite Sheet-export_3
   - first:
-      213: -1864678938305415324
-    second: Kicking Sprite Sheet-export_4
+      213: -5648196858906503382
+    second: Blocking Sprite Sheet-export_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -101,10 +101,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_0
+      name: Blocking Sprite Sheet-export_0
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 18
         width: 32
         height: 62
@@ -115,14 +115,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 107ca69e481ca2e4ea09e623e4e1da9c
-      internalID: -8706427954151833246
+      spriteID: 91ebee9a569f9994194acdcc3c85021e
+      internalID: 1719016131110124852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_1
+      name: Blocking Sprite Sheet-export_1
       rect:
         serializedVersion: 2
         x: 132
@@ -136,19 +136,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c25c380bbfe0d9446887001ea6d4b196
-      internalID: -756041226448099378
+      spriteID: 0039316df69d9b9408a565550ce951fd
+      internalID: 359327264075438781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_2
+      name: Blocking Sprite Sheet-export_2
       rect:
         serializedVersion: 2
-        x: 230
+        x: 228
         y: 18
-        width: 38
+        width: 22
         height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c0cc4de5fe3b964dae40a3e49b8d58c
-      internalID: -6801735124517360905
+      spriteID: f35895ae73c69e44d8d45268ca5baf58
+      internalID: 4195921324308303952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_3
+      name: Blocking Sprite Sheet-export_3
       rect:
         serializedVersion: 2
         x: 324
@@ -178,17 +178,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7ca39ef3ae470041aad5ceaabb94561
-      internalID: -2511626542480340604
+      spriteID: f9a6371efc432894db4a078a5a6c6f32
+      internalID: -5166373620033355234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kicking Sprite Sheet-export_4
+      name: Blocking Sprite Sheet-export_4
       rect:
         serializedVersion: 2
-        x: 426
+        x: 420
         y: 18
         width: 32
         height: 62
@@ -199,8 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578cb555794c0554f9b0ad6150cd62b8
-      internalID: -1864678938305415324
+      spriteID: 938451c2707bd4344ad979323898382c
+      internalID: -5648196858906503382
       vertices: []
       indices: 
       edges: []
