@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public int controllerNumber;
-
     public float moveSpeed;
     public float jumpForce;
     private float moveInput;
@@ -16,13 +14,13 @@ public class PlayerController : MonoBehaviour
     public Collider2D P1KickHitBox;
     private bool attacking = false;
     private float attackTimer = 0;
-    private float attackCd = .8f;
+    private float attackCd = .4f;
     private bool blocking = false;
     private float blockTimer = 0;
     public float blockCd = 0.5f;
     private bool kicking = false;
     private float kickTimer = 0;
-    private float kickCd = .8f;
+    private float kickCd = .4f;
     private Animator anim;
 
     void Start()
@@ -35,7 +33,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         moveInput = Input.GetAxis("Horizontal");
-        moveInput = Input.GetAxis("Horizontal 3");
+        moveInput += Input.GetAxis("Horizontal 3");
         RB.velocity = new Vector2(moveInput * moveSpeed, RB.velocity.y);
 
         if (facingRight == false && moveInput > 0)
@@ -58,7 +56,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Y Button") || Input.GetButtonDown("Y Button 3") && !blocking)
+        if (Input.GetButtonDown("Y Button") && (blocking != true) && (kicking != true) && (attacking != true) || Input.GetButtonDown("Y Button 3") && (blocking != true) && (kicking != true) && (attacking != true))
         {
             blocking = true;
             blockTimer = blockCd;
@@ -79,7 +77,7 @@ public class PlayerController : MonoBehaviour
             }
         }
        
-        if (Input.GetButtonDown("B Button") || Input.GetButtonDown("B Button 3") && !kicking)
+        if (Input.GetButtonDown("B Button") && (blocking != true) && (kicking != true) && (attacking != true) || Input.GetButtonDown("B Button 3") && (blocking != true) && (kicking != true) && (attacking != true))
         {
             kicking = true;
             kickTimer = kickCd;
@@ -100,7 +98,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(Input.GetButtonDown("X Button") || Input.GetButtonDown("X Button 3") && !attacking)
+        if(Input.GetButtonDown("X Button") && (blocking != true) && (kicking != true) && (attacking != true) || Input.GetButtonDown("X Button 3") && (blocking != true) && (kicking != true) && (attacking != true))
         {
             attacking = true;
             attackTimer = attackCd;
