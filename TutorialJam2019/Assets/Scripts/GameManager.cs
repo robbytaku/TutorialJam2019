@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +26,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    IEnumerator RoundReset()
+    {
+        yield return new WaitForSeconds(3);
+        RoundEnd();
+    }
+
     public void HurtP1()
     {
         P1Life -= 1;
@@ -37,6 +44,10 @@ public class GameManager : MonoBehaviour
             else
             {
                 p1Hearts[i].SetActive(false);
+            }
+            if (P1Life == 0)
+            {
+                StartCoroutine(RoundReset());
             }
         }
     }
@@ -54,7 +65,15 @@ public class GameManager : MonoBehaviour
             {
                 p2Hearts[i].SetActive(false);
             }
+            if (P2Life == 0)
+            {
+                StartCoroutine(RoundReset());
+            }
         }
     }
 
+    public void RoundEnd()
+    {
+     
+    }
 }
