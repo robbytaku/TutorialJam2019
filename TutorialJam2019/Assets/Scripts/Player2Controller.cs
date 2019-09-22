@@ -16,13 +16,13 @@ public class Player2Controller : MonoBehaviour
     public Collider2D P2KickHitBox;
     private bool attacking = false;
     private float attackTimer = 0;
-    private float attackCd = 0.01f;
+    private float attackCd = .8f;
     private bool blocking = false;
     private float blockTimer = 0;
     public float blockCd = 0.5f;
     private bool kicking = false;
     private float kickTimer = 0;
-    private float kickCd = 0.01f;
+    private float kickCd = .8f;
     private Animator anim;
 
     void Start()
