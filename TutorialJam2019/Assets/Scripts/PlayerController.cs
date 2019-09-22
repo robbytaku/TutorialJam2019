@@ -13,9 +13,16 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     private bool isGrounded;
     public Collider2D P1PunchHitBox;
+    public Collider2D P1KickHitBox;
     private bool attacking = false;
     private float attackTimer = 0;
     private float attackCd = 0.01f;
+    private bool blocking = false;
+    private float blockTimer = 0;
+    public float blockCd = 0.5f;
+    private bool kicking = false;
+    private float kickTimer = 0;
+    private float kickCd = 0.01f;
     private Animator anim;
 
     void Start()
@@ -47,6 +54,49 @@ public class PlayerController : MonoBehaviour
             if (isGrounded)
             {
                 RB.velocity = Vector2.up * jumpForce;
+            }
+        }
+
+        if (Input.GetButtonDown("Y Button") && !blocking)
+        {
+            blocking = true;
+            blockTimer = blockCd;
+            anim.SetTrigger("Block");
+            gameObject.tag = "Player1Block";
+        }
+
+        if (blocking)
+        {
+            if(blockTimer > 0)
+            {
+                blockTimer -= Time.deltaTime;
+            }
+            else
+            {
+            blocking = false;
+            gameObject.tag = "player1";
+            }
+        }
+       
+        if (Input.GetButtonDown("B Button") && !kicking)
+        {
+            kicking = true;
+            kickTimer = kickCd;
+            anim.SetTrigger("Kick");
+            Debug.Log("Kick");
+            P1KickHitBox.enabled = true;
+        }
+
+        if (kicking)
+        {
+            if (kickTimer > 0)
+            {
+                kickTimer -= Time.deltaTime;
+            }
+            else
+            {
+                kicking = false;
+                P1KickHitBox.enabled = false;
             }
         }
 

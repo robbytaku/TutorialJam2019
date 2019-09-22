@@ -15,7 +15,10 @@ public class Player2Controller : MonoBehaviour
     public Collider2D P2PunchHitBox;
     private bool attacking = false;
     private float attackTimer = 0;
-    private float attackCd = 0.3f;
+    private float attackCd = 0.01f;
+    private bool blocking = false;
+    private float blockTimer = 0;
+    public float blockCd = 0.5f;
     private Animator anim;
 
     void Start()
@@ -47,6 +50,27 @@ public class Player2Controller : MonoBehaviour
             if (isGrounded)
             {
                 RB.velocity = Vector2.up * jumpForce;
+            }
+        }
+
+        if (Input.GetButtonDown("Y Button 2") && !blocking)
+        {
+            blocking = true;
+            blockTimer = blockCd;
+            anim.SetTrigger("Block");
+            gameObject.tag = "Player2Block";
+        }
+
+        if (blocking)
+        {
+            if (blockTimer > 0)
+            {
+                blockTimer -= Time.deltaTime;
+            }
+            else
+            {
+                blocking = false;
+                gameObject.tag = "player2";
             }
         }
 
@@ -97,5 +121,11 @@ public class Player2Controller : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    public void KickP2()
+    {
+        anim.SetTrigger("Idle");
+        gameObject.tag = "player2";
     }
 }
