@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 459786632}
   - component: {fileID: 459786631}
   m_Layer: 0
-  m_Name: Desert
+  m_Name: Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,7 +415,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4295775933390b84dbaec1dab6e6f106, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c4a5be8aabbce254682e9cb23b670c74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -434,8 +434,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459786630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0965, y: -2.0183, z: 0}
-  m_LocalScale: {x: 0.32888404, y: 0.24421051, z: 1}
+  m_LocalPosition: {x: 0.0876, y: -2.0093, z: 0}
+  m_LocalScale: {x: 0.24669746, y: 0.18569484, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
