@@ -22,6 +22,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    void CreditsTransition()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     void QuitGame()
     {
         Application.Quit();
@@ -37,4 +42,8 @@ public class MainMenu : MonoBehaviour
         Invoke("QuitGame", 1f);
     }
 
+    public void PressCredits()
+    {
+        Invoke("CreditsTransition", 1f);
+    }
 }
