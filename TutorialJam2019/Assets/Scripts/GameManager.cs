@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,25 +10,134 @@ public class GameManager : MonoBehaviour
     public GameObject player2;
     public GameObject[] p1Hearts;
     public GameObject[] p2Hearts;
+    public Image p1Wins0;
+    public Image p1Wins1;
+    public Image p1Wins2;
+    public Image p1Wins3;
+    public Image p2Wins0;
+    public Image p2Wins1;
+    public Image p2Wins2;
+    public Image p2Wins3;
 
+    static public int p1Wins;
+    static public int p2Wins;
     public int P1Life;
     public int P2Life;
+    bool P1Won;
+    bool P2Won;
 
     void Desert()
     {
         SceneManager.LoadScene("Level2");
     }
 
-void Update()
+    private void Start()
+    {
+        if (p1Wins == 0)
+        {
+            p1Wins0.enabled = true;
+            p1Wins1.enabled = false;
+            p1Wins2.enabled = false;
+            p1Wins3.enabled = false;
+            P1Won = false;
+            P2Won = false;
+        }
+
+        else if (p1Wins == 1)
+        {
+            p1Wins0.enabled = false;
+            p1Wins1.enabled = true;
+            p1Wins2.enabled = false;
+            p1Wins3.enabled = false;
+            P1Won = false;
+            P2Won = false;
+        }
+        else if (p1Wins == 2)
+        {
+            p1Wins0.enabled = false;
+            p1Wins1.enabled = false;
+            p1Wins2.enabled = true;
+            p1Wins3.enabled = false;
+            P1Won = false;
+            P2Won = false;
+        }
+        else if (p1Wins == 3)
+        {
+
+        }
+
+        if (p2Wins == 0)
+        {
+            p2Wins0.enabled = true;
+            p2Wins1.enabled = false;
+            p2Wins2.enabled = false;
+            p2Wins3.enabled = false;
+            P1Won = false;
+            P2Won = false;
+        }
+        else if (p2Wins == 1)
+        {
+            p2Wins0.enabled = false;
+            p2Wins1.enabled = true;
+            p2Wins2.enabled = false;
+            p2Wins3.enabled = false;
+            P1Won = false;
+            P2Won = false;
+        }
+        else if (p1Wins == 2)
+        {
+            p2Wins0.enabled = false;
+            p2Wins1.enabled = false;
+            p2Wins2.enabled = true;
+            p2Wins3.enabled = false;
+            P1Won = false;
+            P2Won = false;
+        }
+        else if (p1Wins == 3)
+        {
+
+        }
+    }
+
+    void Update()
     {
         if(P1Life <= 0)
         {
             player1.SetActive(false);
         }
-
+        if (p1Wins == 1)
+        {
+            p1Wins0.enabled = false;
+            p1Wins1.enabled = true;
+        } 
+        else if (p1Wins == 2)
+        {
+            p1Wins1.enabled = false;
+            p1Wins2.enabled = true;
+        }
+        else if (p1Wins == 3)
+        {
+            p1Wins2.enabled = false;
+            p1Wins3.enabled = true;
+        }
         if (P2Life <= 0)
         {
             player2.SetActive(false);
+        }
+        if (p2Wins == 1)
+        {
+            p2Wins0.enabled = false;
+            p2Wins1.enabled = true;
+        }
+        else if (p2Wins == 2)
+        {
+            p2Wins1.enabled = false;
+            p2Wins2.enabled = true;
+        }
+        else if (p2Wins == 3)
+        {
+            p2Wins2.enabled = false;
+            p2Wins3.enabled = true;
         }
     }
 
@@ -50,8 +160,10 @@ void Update()
             {
                 p1Hearts[i].SetActive(false);
             }
-            if (P1Life == 0)
+            if (P1Life == 0 && P2Won != true)
             {
+                P2Won = true;
+                p2Wins ++;
                 StartCoroutine(RoundReset());
             }
         }
@@ -70,8 +182,10 @@ void Update()
             {
                 p2Hearts[i].SetActive(false);
             }
-            if (P2Life == 0)
+            if (P2Life == 0 && P1Won != true)
             {
+                P1Won = true;
+                p1Wins++;
                 StartCoroutine(RoundReset());
             }
         }
