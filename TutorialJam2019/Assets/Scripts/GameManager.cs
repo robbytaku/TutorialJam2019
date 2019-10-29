@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         }
         else if (p1Wins == 3)
         {
-
+            SceneManager.LoadScene("P1WinScene");
         }
 
         if (p2Wins == 0)
@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
             P1Won = false;
             P2Won = false;
         }
-        else if (p1Wins == 2)
+        else if (p2Wins == 2)
         {
             p2Wins0.enabled = false;
             p2Wins1.enabled = false;
@@ -93,9 +93,9 @@ public class GameManager : MonoBehaviour
             P1Won = false;
             P2Won = false;
         }
-        else if (p1Wins == 3)
+        else if (p2Wins == 3)
         {
-
+            SceneManager.LoadScene("P2WinScene");
         }
     }
 
